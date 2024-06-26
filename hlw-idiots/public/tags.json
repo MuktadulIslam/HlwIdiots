@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Academic",
+        "bnName": "একাডেমিক",
+        "type": "regular",
+        "slug": "academic"
+    },
+    {
+        "name": "Medical",
+        "bnName": "মেডিকেল",
+        "type": "regular",
+        "slug": "medical"
+    },
+    {
+        "name": "One-shot Revision",
+        "bnName": "ওয়ান-শট রিভিশন",
+        "type": "regular",
+        "slug": "one-shot-revision"
+    },
+    {
+        "name": "Hot Questions",
+        "bnName": "হট প্রশ্ন",
+        "type": "regular",
+        "slug": "hot-questions"
+    },
+    {
+        "name": "Most Failed Questions",
+        "bnName": "মোস্ট ফেইল্ড প্রশ্নগুলো",
+        "type": "regular",
+        "slug": "most-failed-questions"
+    }
+]

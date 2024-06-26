@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Rajshahi Board",
+        "bnName": "রাজশাহী বোর্ড",
+        "slug": "rajshahi"
+    },
+    {
+        "name": "Sylhet Board",
+        "bnName": "সিলেট বোর্ড",
+        "slug": "sylhet"
+    },
+    {
+        "name": "Comilla Board",
+        "bnName": "কুমিল্লা বোর্ড",
+        "slug": "comilla"
+    },
+    {
+        "name": "Jessore Board",
+        "bnName": "যশোর বোর্ড",
+        "slug": "jessore"
+    },
+    {
+        "name": "Technical Board",
+        "bnName": "কারিগরি বোর্ড",
+        "slug": "technical"
+    },
+    {
+        "name": "Barisal Board",
+        "bnName": "বরিশাল বোর্ড",
+        "slug": "barisal"
+    },
+    {
+        "name": "Dinajpur Board",
+        "bnName": "দিনাজপুর বোর্ড",
+        "slug": "dinajpur"
+    },
+    {
+        "name": "Chittagong Board",
+        "bnName": "চট্টগ্রাম বোর্ড",
+        "slug": "chittagong"
+    },
+    {
+        "name": "Madrasah Board",
+        "bnName": "মাদ্রাসা বোর্ড",
+        "slug": "madrasah"
+    },
+    {
+        "name": "Dhaka Board",
+        "bnName": "ঢাকা বোর্ড",
+        "slug": "dhaka"
+    },
+    {
+        "name": "Mymensingh Board",
+        "bnName": "ময়মনসিংহ বোর্ড",
+        "slug": "mymensingh"
+    }
+]

@@ -1,0 +1,93 @@
+[
+    {
+        "name": "Bangla",
+        "paper": "1st Paper",
+        "bnName": "বাংলা",
+        "bnPaper": "১ম পত্র",
+        "slug": "bangla-1st-paper"
+    },
+    {
+        "name": "Bangla",
+        "paper": "2nd Paper",
+        "bnName": "বাংলা",
+        "bnPaper": "২য় পত্র",
+        "slug": "bangla-2nd-paper"
+    },
+    {
+        "name": "English",
+        "paper": "1st Paper",
+        "bnName": "ইংরেজি",
+        "bnPaper": "১ম পত্র",
+        "slug": "english-1st-paper"
+    },
+    {
+        "name": "English",
+        "paper": "2nd Paper",
+        "bnName": "ইংরেজি",
+        "bnPaper": "২য় পত্র",
+        "slug": "english-2nd-paper"
+    },
+    {
+        "name": "Physics",
+        "paper": "1st Paper",
+        "bnName": "পদার্থ",
+        "bnPaper": "১ম পত্র",
+        "slug": "physics-1st-paper"
+    },
+    {
+        "name": "Physics",
+        "paper": "2nd Paper",
+        "bnName": "পদার্থ",
+        "bnPaper": "২য় পত্র",
+        "slug": "physics-2nd-paper"
+    },
+    {
+        "name": "Chemistry",
+        "paper": "1st Paper",
+        "bnName": "রসায়ন",
+        "bnPaper": "১ম পত্র",
+        "slug": "chemistry-1st-paper"
+    },
+    {
+        "name": "Chemistry",
+        "paper": "2nd Paper",
+        "bnName": "রসায়ন",
+        "bnPaper": "২য় পত্র",
+        "slug": "chemistry-2nd-paper"
+    },
+    {
+        "name": "Math",
+        "paper": "1st Paper",
+        "bnName": "গণিত",
+        "bnPaper": "১ম পত্র",
+        "slug": "math-1st-paper"
+    },
+    {
+        "name": "Math",
+        "paper": "2nd Paper",
+        "bnName": "গণিত",
+        "bnPaper": "২য় পত্র",
+        "slug": "math-2nd-paper"
+    },
+    {
+        "name": "Biology",
+        "paper": "1st Paper",
+        "bnName": "জীববিজ্ঞান",
+        "bnPaper": "১ম পত্র",
+        "slug": "biology-1st-paper"
+    },
+    {
+        "name": "Biology",
+        "paper": "2nd Paper",
+        "bnName": "জীববিজ্ঞান",
+        "bnPaper": "২য় পত্র",
+        "slug": "biology-2nd-paper"
+    },
+    {
+        "name": "ICT",
+        "paper": "Full",
+        "bnName": "আইসিটি",
+        "bnPaper": "সম্পূর্ণ",
+        "slug": "ict"
+    }
+]

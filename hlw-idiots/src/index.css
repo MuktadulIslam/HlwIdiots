@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Tiro Bangla', 'Roboto', sans-serif !important;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.my-grid {
+    grid-template-columns: 1fr max-content;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@layer components {
+    .card {
+        @apply bg-[#FFC2C2] p-3 shadow-md rounded-lg;
+    }
+
+    .card-white {
+        @apply bg-white p-3 shadow-md rounded-lg;
+    }
+
+    .card-sm {
+        @apply text-center bg-[#D9D9D9] text-[#7F7F7F] px-2 py-1 shadow-md rounded-lg;
+    }
+
+    .input {
+        @apply text-center bg-[#F5F5F5] text-[#7F7F7F] px-4 py-1 shadow-md rounded-lg outline-none;
+    }
+
+    .admin-widget {
+        @apply bg-slate-200 text-lg font-semibold text-center px-3 py-6 rounded-xl;
+    }
+
+    .admin-label {
+        @apply block text-gray-700 text-sm font-bold mb-2;
+    }
+
+    .admin-input {
+        @apply w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500;
+    }
+
+    .admin-btn {
+        @apply bg-blue-100 hover:bg-blue-200 text-sm text-blue-900 font-medium py-2 px-5 rounded-md;
+    }
+
+    .admin-big-btn {
+        @apply w-36 h-36 flex flex-col justify-center items-center gap-2 font-semibold rounded-full px-4 py-2 text-sm focus:outline-none;
+    }
+}
