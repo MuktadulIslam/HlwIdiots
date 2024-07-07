@@ -1,3 +1,7 @@
+const jwt = require("jsonwebtoken");
+const {JWT} = require("../config/system-config.js")
+const AdminCollection = require('../repositories/hlwidiots/models/AdminUser.js')
+
 const verifyJWT = (req, res, next) => {
     const authorization = req.headers.authorization;
     if (!authorization) {
@@ -9,7 +13,7 @@ const verifyJWT = (req, res, next) => {
     // bearer token
     const token = authorization.split(" ")[1];
 
-    jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
+    jwt.verify(token, JWT.secretKey, (err, decoded) => {
         if (err) {
             return res
                 .status(401)
@@ -21,10 +25,11 @@ const verifyJWT = (req, res, next) => {
     });
 };
 
+
 const verifyAdmin = async (req, res, next) => {
     const email = req.decoded.email;
     const query = { email: email };
-    const user = await adminCollection.findOne(query);
+    const user = await AdminCollection.findOne(query);
     if (user?.role !== "Admin") {
         return res
             .status(403)
@@ -36,7 +41,7 @@ const verifyAdmin = async (req, res, next) => {
 const verifyQuestioner = async (req, res, next) => {
     const email = req.decoded.email;
     const query = { email: email };
-    const user = await adminCollection.findOne(query);
+    const user = await AdminCollection.findOne(query);
     if (user?.role !== "Admin" && user?.role !== "Questioner") {
         return res
             .status(403)
@@ -46,8 +51,8 @@ const verifyQuestioner = async (req, res, next) => {
 };
 
 
-export default {
+module.exports = {
     verifyJWT,
-    verifyAdmin,
-    verifyQuestioner
+    verifyQuestioner,
+    verifyAdmin
 };

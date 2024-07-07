@@ -4,11 +4,15 @@ const { TAGS_TABLE } = require("../../../config/hlwidiots-config")
 const tagSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true,
     },
     bnName: {
         type: String,
-        required: true,
+    },
+    subject: {
+        type: String,
+    },
+    college: {
+        type: String,
     },
     type: {
         type: String,
@@ -18,13 +22,11 @@ const tagSchema = new mongoose.Schema({
     },
     createdBy: {
         type: String,
-        required: true,
     },
     createdAt: {
         type: String,
-        required: true,
     }
-});
+}, { collection: TAGS_TABLE });
 
 
 const TagsCollection = mongoose.model(TAGS_TABLE, tagSchema);

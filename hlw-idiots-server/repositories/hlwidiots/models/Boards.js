@@ -4,17 +4,14 @@ const { BOARD_TABLE } = require("../../../config/hlwidiots-config")
 const boardSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true
     },
     bnName: {
         type: String,
-        required: true
     },
     slug: {
         type: String,
-        required: true
     }
-});
+}, { collection: BOARD_TABLE });
 
 const BoardCollection = mongoose.model(BOARD_TABLE, boardSchema);
 

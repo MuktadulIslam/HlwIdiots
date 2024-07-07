@@ -4,23 +4,18 @@ const { EXAMLIST_TABLE } = require("../../../config/hlwidiots-config")
 const examListSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true,
     },
     type: {
         type: String,
-        required: true,
     },
     privilege: {
         type: String,
-        required: true,
     },
     duration: {
         type: Number, // assuming duration is in minutes
-        required: true,
     },
     totalQuestions: {
         type: Number,
-        required: true,
     },
     positiveMarking: {
         type: Number,
@@ -32,20 +27,17 @@ const examListSchema = new mongoose.Schema({
     },
     startTime: {
         type: String,
-        required: true,
     },
     endTime: {
         type: String,
-        required: true,
     },
     slug: {
         type: String,
-        required: true,
     },
     questions: {
         type: [String],
     }
-});
+}, { collection: EXAMLIST_TABLE });
 
 const ExamListCollection = mongoose.model(EXAMLIST_TABLE, examListSchema);
 

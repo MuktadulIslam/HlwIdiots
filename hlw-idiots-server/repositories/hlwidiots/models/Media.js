@@ -3,10 +3,9 @@ const { MEDIA_TABLE } = require("../../../config/hlwidiots-config")
 
 const mediaSchema = new mongoose.Schema({
     image: {
-        type: String,
-        required: true
+        type: String
     }
-});
+}, { collection: MEDIA_TABLE });
 
 const MediaCollection = mongoose.model(MEDIA_TABLE, mediaSchema);
 

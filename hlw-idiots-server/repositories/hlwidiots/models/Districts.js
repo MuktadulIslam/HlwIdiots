@@ -4,11 +4,9 @@ const { DISTRICTS_TABLE } = require("../../../config/hlwidiots-config")
 const districtSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true
     },
     bnName: {
         type: String,
-        required: true
     },
     lat: {
         type: String,
@@ -19,7 +17,7 @@ const districtSchema = new mongoose.Schema({
     slug: {
         type: String,
     }
-});
+}, { collection: DISTRICTS_TABLE });
 
 const DistrictCollection = mongoose.model(DISTRICTS_TABLE, districtSchema);
 
